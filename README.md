@@ -1,17 +1,22 @@
 <h1 align="center">Hi, I'm @BenwillLopez 👋</h1>
 
 <p align="center">
-  Data analysis and analytics · iOS sideloading tools · automation
+  iOS sideloading · app sources · automation
 </p>
 
 <p align="center">
   <a href="https://iosgods.com/profile/146384-xxtototroniikxx/" rel="me"><img alt="iOSGods profile: xxtototroniikxx" src="https://img.shields.io/badge/iOSGods-xxtototroniikxx-8B5CF6?style=for-the-badge&logo=apple&logoColor=white"></a>
 </p>
 
-I like turning messy data into clear answers, and scattered app sources into one clean feed. I'm
-open to data projects and collaborations.
+## 🔭 How it started
 
-## 🚀 Featured: [Accretion](https://github.com/BenwillLopez/accretion)
+I went looking for one thing: **a single source link** with every sideloading app in it, always
+at its newest version. What I found was dozens of separate sources. Many apps were duplicated,
+versions were outdated, download links were dead, and every source had to be added one by one.
+
+I couldn't find a solution, so I built one.
+
+## 🚀 [Accretion](https://github.com/BenwillLopez/accretion)
 
 <a href="https://github.com/BenwillLopez/accretion"><img src="https://raw.githubusercontent.com/benwilllopez/accretion/main/assets/header.png" alt="Accretion: every source, pulled into one" width="100%"></a>
 
@@ -22,39 +27,32 @@ open to data projects and collaborations.
   <img alt="Last update" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbenwilllopez%2Faccretion%2Fmain%2Fstats.json&query=%24.updated&label=updated&color=555">
 </p>
 
-Accretion is an app source in the AltStore JSON format. It pulls 160+ public AltStore and
-SideStore sources into one link and keeps only the **newest version** of every app. It works in
-the iOSGods App, AltStore, SideStore, Feather and ESign.
+In space, *accretion* is how gravity pulls scattered matter into one body. **Accretion** does the
+same for sideloading: it pulls 160+ public AltStore and SideStore sources into one link.
+
+- 🪐 **One link, every app.** Each app appears once, always at its newest version.
+- 🔄 **Updates itself.** It rebuilds every 6 hours and finds new sources every week.
+- ✅ **Clean and safe.** Every app is checked against the AltStore format, links are https only,
+  and dead downloads are removed daily.
+- 📱 **Works everywhere.** iOSGods App, AltStore, SideStore, Feather and ESign.
+
+**Add it:**
 
 ```
 https://raw.githubusercontent.com/benwilllopez/accretion/main/source.json
 ```
 
-## 📁 Projects
+Prefer a lighter list? **Accretion Core** has only the hand-picked sources:
 
-| Project | What it is | Built with |
-|---|---|---|
-| [**Accretion**](https://github.com/BenwillLopez/accretion) | Self-updating, spec-validated app source that merges 160+ sources | Python, GitHub Actions |
-| [**Excel practice**](https://github.com/BenwillLopez/BenwillLopez/tree/main/projects/excel-platzi) | Table formatting and database exercises from Platzi's *Excel – Aplicación Práctica* | Excel |
+```
+https://raw.githubusercontent.com/benwilllopez/accretion/main/curated.json
+```
 
-## 🧰 What I work with
+## 🤝 Get involved
 
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img alt="Excel" src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white">
-  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
-  <img alt="iOS sideloading" src="https://img.shields.io/badge/iOS%20sideloading-000000?style=flat-square&logo=apple&logoColor=white">
-</p>
-
-- **Data analysis:** cleaning, structuring and explaining data
-- **Visualization:** charts and dashboards that make the answer obvious
-- **Data management:** consistent formats, tidy tables, reliable pipelines
-- **Automation:** scheduled jobs that keep things up to date on their own
-
-## 🌱 Currently
-
-- Learning visualization and data management best practices
-- Growing Accretion into the cleanest all-in-one source for sideloaders
+- 💡 [Suggest a source](https://github.com/BenwillLopez/accretion/issues/new?template=add-source.yml)
+- 🐞 [Report a broken app or source](https://github.com/BenwillLopez/accretion/issues/new?template=report-source.yml)
+- ⭐ Star [Accretion](https://github.com/BenwillLopez/accretion) if it saves you time
 
 ## 📫 Find me
 
