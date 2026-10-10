@@ -1,23 +1,25 @@
 name: Build source
 
+# Rebuilds source.json from all sources so it always has the newest versions.
 on:
   schedule:
-    - cron: "17 6 * * *"
+    - cron: "23 */6 * * *"
   push:
     branches: [main]
-    paths: [sources.txt, merge.py]
+    paths: [sources.txt, blocklist.txt, merge.py, common.py]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: build-source
+  group: altsource
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,7 +30,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add source.json cache
+          git add -A
           git diff --cached --quiet && exit 0
           git commit -m "Update source.json"
+          git pull --rebase --autostash origin main
           git push
